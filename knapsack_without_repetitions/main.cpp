@@ -5,7 +5,14 @@
 #include <algorithm>
 #include <utility>
 
-using namespace std;
+
+//#include <fstream>
+//std::ofstream cout("output.txt");
+using std::cout;
+//using namespace std;
+using std::cin;
+using std::vector;
+using std::pair;
 
 #define EPS 1e-9
 
@@ -48,7 +55,7 @@ int greedy_method(int W, vector<int> w, vector<int> v) {
 	sort(w_prime.begin(), w_prime.end(), x_sort);
 	bool one_element = false;
 	vector<Element>::iterator maximum = max_element(w_prime.begin(), w_prime.end(), y_comp);
-	int F1 = 0, F2 = (*maximum).v, F, id = 0, W1 = 0;
+	int F1 = 0, F2 = (*maximum).w > W ? 0 : (*maximum).v, F, id = 0, W1 = 0;
 	for (size_t i = 0; i < w_prime.size(); i++) {
 		if (W1 < W) {
 			F1 += w_prime[i].v;
@@ -59,6 +66,7 @@ int greedy_method(int W, vector<int> w, vector<int> v) {
 			break;
 		}
 	}
+	cout << "F1 = " << F1 << "\nF2 = " << F2 << "\n";
 	if (F1 >= F2) {
 		cout << "ELEMENTS WITH ID:\n";
 		for (size_t i = 0; i <= id; i++) {
@@ -71,6 +79,7 @@ int greedy_method(int W, vector<int> w, vector<int> v) {
 		cout << "ID OF MAXIMUM ELEMENT:\n" << ((*maximum).id + 1) << "\n";
 		F = F2;
 	}
+	cout << "F = " << F << "\n";
 	return F;
 }
 
@@ -139,17 +148,23 @@ int main() {
 	int n, W;
 	cout << "A(Knapsack weight) = ";
 	cin >> W;
+	cout << W << "\n";
 	cout << "n(Size of weight and value vectors) = ";
 	cin >> n;
+	cout << n << "\n";
 	vector<int> w(n), v(n);
 	cout << "a(Weight vector of subjects):\n";
 	for (int i = 0; i < n; i++) {
 		cin >> w[i];
+		cout << w[i] << " ";
 	}
+	cout << "\n";
 	cout << "c(Value vector of subjects):\n";
 	for (int i = 0; i < n; i++) {
 		cin >> v[i];
+		cout << v[i] << " ";
 	}
+	cout << "\n";
 	cout << "RESULT = " << optimal_weight(W, w, v) << '\n';
 	cout << "GREEDY RESULT = " << greedy_method(W, w, v) << "\n";
 	return 0;
