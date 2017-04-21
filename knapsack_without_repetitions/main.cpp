@@ -51,20 +51,29 @@ int greedy_method(int W, vector<int> w, vector<int> v) {
 		w_prime[i].v = v[i];
 		w_prime[i].w = w[i];
 		w_prime[i].v_div_w = 0.0 + (double) v[i] / w[i];
+		/*cout << "id = " << i <<
+			"; v = " << v[i] << "; w = " << w[i] <<
+			"; v / w = " << w_prime[i].v_div_w << "\n";*/
 	}
 	sort(w_prime.begin(), w_prime.end(), x_sort);
 	bool one_element = false;
 	vector<Element>::iterator maximum = max_element(w_prime.begin(), w_prime.end(), y_comp);
 	int F1 = 0, F2 = (*maximum).w > W ? 0 : (*maximum).v, F, id = 0, W1 = 0;
 	for (size_t i = 0; i < w_prime.size(); i++) {
-		if (W1 < W) {
-			F1 += w_prime[i].v;
+		
+		//if (W1 < W) {
+			//cout << w_prime[i].v_div_w << " " << w_prime[i].id << "\n";
+			
 			W1 += w_prime[i].w;
+			if (W1 >= W) {
+				break;
+			}
+			F1 += w_prime[i].v;
 			id = i;
-		}
-		else {
-			break;
-		}
+		//}
+		//else {
+		//	break;
+		//}
 	}
 	cout << "F1 = " << F1 << "\nF2 = " << F2 << "\n";
 	if (F1 >= F2) {
