@@ -1,11 +1,11 @@
 ﻿  main.cpp
-c:\users\1\documents\github\knapsack_without_repetitions\knapsack_without_repetitions\main.cpp(72): warning C4018: <=: несоответствие типов со знаком и без знака
-c:\users\1\documents\github\knapsack_without_repetitions\knapsack_without_repetitions\main.cpp(90): warning C4018: <: несоответствие типов со знаком и без знака
-c:\users\1\documents\github\knapsack_without_repetitions\knapsack_without_repetitions\main.cpp(105): warning C4018: <: несоответствие типов со знаком и без знака
-c:\users\1\documents\github\knapsack_without_repetitions\knapsack_without_repetitions\main.cpp(109): warning C4018: <: несоответствие типов со знаком и без знака
-c:\users\1\documents\github\knapsack_without_repetitions\knapsack_without_repetitions\main.cpp(111): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\1\documents\github\knapsack_without_repetitions\knapsack_without_repetitions\main.cpp(81): warning C4018: <=: несоответствие типов со знаком и без знака
+c:\users\1\documents\github\knapsack_without_repetitions\knapsack_without_repetitions\main.cpp(100): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\1\documents\github\knapsack_without_repetitions\knapsack_without_repetitions\main.cpp(115): warning C4018: <: несоответствие типов со знаком и без знака
 c:\users\1\documents\github\knapsack_without_repetitions\knapsack_without_repetitions\main.cpp(119): warning C4018: <: несоответствие типов со знаком и без знака
-c:\users\1\documents\github\knapsack_without_repetitions\knapsack_without_repetitions\main.cpp(123): warning C4018: <: несоответствие типов со знаком и без знака
-c:\users\1\documents\github\knapsack_without_repetitions\knapsack_without_repetitions\main.cpp(125): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\1\documents\github\knapsack_without_repetitions\knapsack_without_repetitions\main.cpp(121): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\1\documents\github\knapsack_without_repetitions\knapsack_without_repetitions\main.cpp(129): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\1\documents\github\knapsack_without_repetitions\knapsack_without_repetitions\main.cpp(133): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\1\documents\github\knapsack_without_repetitions\knapsack_without_repetitions\main.cpp(135): warning C4018: <: несоответствие типов со знаком и без знака
   knapsack_without_repetitions.vcxproj -> C:\Users\1\Documents\GitHub\knapsack_without_repetitions\Debug\knapsack_without_repetitions.exe
   knapsack_without_repetitions.vcxproj -> C:\Users\1\Documents\GitHub\knapsack_without_repetitions\Debug\knapsack_without_repetitions.pdb (Full PDB)

@@ -1,3 +1,5 @@
+// Copyright (c) 2017 Denis Skripov
+// https://github.com/nizhikebinesi/knapsack_without_repetitions
 #include <iostream>
 #include <vector>
 #include <cmath>
